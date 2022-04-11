@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
         publish = true,
         features = "src/test/resources/features/",
         glue = "com/musala/stepDefinition",
-        tags = "@TC1",
+        tags = "@TC4",
         dryRun = false
 )
 
-public class CucumberRunner {
+public class CucumberRunner3 {
 }
