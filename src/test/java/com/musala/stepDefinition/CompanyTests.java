@@ -14,7 +14,12 @@ import org.testng.Assert;
 import java.util.ArrayList;
 
 public class CompanyTests {
-    private Company company=new Company();
+    private final Company company;
+
+    public CompanyTests(Company company){
+        this.company=company;
+    }
+
     @When("user clicks on the {string} link")
     public void user_clicks_on_the_link(String string) {
         company.clickOnCompany(string);

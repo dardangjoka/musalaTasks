@@ -16,7 +16,10 @@ import java.util.List;
 import java.util.Map;
 
 public class CareerTests {
-    private Careers career=new Careers();
+    private final Careers career;
+    public CareerTests(Careers career){
+        this.career=career;
+    }
     @When("clicks {string} button")
     public void clicks_button(String career) {
 

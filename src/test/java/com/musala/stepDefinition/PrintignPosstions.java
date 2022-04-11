@@ -6,7 +6,11 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.Select;
 
 public class PrintignPosstions {
-    private Careers career=new Careers();
+    private final Careers career;
+
+    public PrintignPosstions(Careers career){
+        this.career=career;
+    }
     @When("Filter the available positions by available cities in the dropdown ‘Select location’ {string}")
     public void filter_the_available_positions_by_available_cities_in_the_dropdown_select_location(String city) {
         Select select=new Select(career.selectMenue);

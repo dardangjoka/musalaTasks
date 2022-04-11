@@ -16,7 +16,11 @@ import javax.sound.midi.Soundbank;
 import java.time.Duration;
 
 public class ContactForm {
-    BasePage basePage=new BasePage();
+    private final BasePage basePage;
+
+    public ContactForm(BasePage basePage){
+        this.basePage=basePage;
+    }
 
     @Given("User is on the homepage")
     public void user_is_on_the_homepage() {
